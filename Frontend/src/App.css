@@ -1,0 +1,142 @@
+
+
+.body1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image:-webkit-image-set(url(./smit.avif)) ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f0f3ff;
+  font-family: var(--main-font);
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem;
+  background: transparent;
+  
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 3rem;
+  outline: #ffffff 1px solid;
+  color: #F5A31A;
+  -webkit-text-stroke-width: 0.01rem;
+  -webkit-text-stroke-color: rgb(12, 40, 12);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: brightness(0.4);
+}
+form h1,h2{
+  font-weight: 600;
+  display: grid;
+  justify-content: center;
+  animation: titel 3s  infinite   linear;
+}
+@keyframes titel {  
+  0% { transform: translateY(0px); }
+5% { transform: translateY(-2px); }
+10% { transform: translateY(-4px); }
+15% { transform: translateY(-6px); }
+20% { transform: translateY(-8px); }
+25% { transform: translateY(-10px); }
+30% { transform: translateY(-8px); }
+35% { transform: translateY(-6px); }
+40% { transform: translateY(-4px); }
+45% { transform: translateY(-2px); }
+50% { transform: translateY(0px); }
+55% { transform: translateY(2px); }
+60% { transform: translateY(4px); }
+65% { transform: translateY(6px); }
+70% { transform: translateY(8px); }
+75% { transform: translateY(10px); }
+80% { transform: translateY(8px); }
+85% { transform: translateY(6px); }
+90% { transform: translateY(4px); }
+95% { transform: translateY(2px); }
+100% { transform: translateY(0px); }
+}
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #F5A31A;
+  
+
+
+  font-size: 1.25rem; /* Increase the font size */
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem; /* Reduce the padding */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 0.5rem;
+  border: transparent;
+  border-width: 1px;
+  border-style: solid ;
+  font-size: 1rem;
+  color: #333;
+}
+
+form input:hover {
+ border: 1px solid #f7b94d;
+}
+
+form button {
+  width: 70%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: none;
+  color: white;
+  background-color: #F5A31A;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #fdcc77;
+}
+.error{
+ color: red;
+}
+@media screen and (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+  }
+}
+.classroom{
+  background-color: white;
+  justify-content: left;
+ position: absolute;
+
+  margin: 0%;
+  padding: 0%;
+
+  grid-template-columns: 3fr;
+  grid-template-rows: min-content;
+  grid-template-areas: "nav nav nav",
+  "slide main main",
+  "slide main main";
+  max-width: 100%;
+  height: 100vh;
+}
+.classroom nav{
+  background: #000;
+
+}
+.classroom slide{
+  background-color:#F5A31A;
+}
+.classroom main{
+  background-color: #77c7fd;
+}
