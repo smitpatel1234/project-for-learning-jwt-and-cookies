@@ -16,12 +16,12 @@ This project is a **secure login system** that uses **JWT (JSON Web Tokens)** fo
 ### 📌 Backend:
 - **Node.js** with **Express.js**  
 - **JWT (jsonwebtoken)** for authentication  
-- **MongoDB ** 
+- **MongoDB** 
 - **bcrypt.js** for password hashing  
 - **dotenv** for environment variables  
 
 ### 🎨 Frontend:
-- **React.js **   
+- **React.js**   
 
 
 
